@@ -1,0 +1,10 @@
+F:\MyCode\WebAPI\WebAPIDemo\TestWebAPIFromService\bin\Debug\TestWebAPIFromService.exe.config
+F:\MyCode\WebAPI\WebAPIDemo\TestWebAPIFromService\bin\Debug\TestWebAPIFromService.exe
+F:\MyCode\WebAPI\WebAPIDemo\TestWebAPIFromService\bin\Debug\TestWebAPIFromService.pdb
+F:\MyCode\WebAPI\WebAPIDemo\TestWebAPIFromService\obj\Debug\TestWebAPIFromService.csprojResolveAssemblyReference.cache
+F:\MyCode\WebAPI\WebAPIDemo\TestWebAPIFromService\obj\Debug\TestWebAPIFromService.FrmMain.resources
+F:\MyCode\WebAPI\WebAPIDemo\TestWebAPIFromService\obj\Debug\TestWebAPIFromService.Properties.Resources.resources
+F:\MyCode\WebAPI\WebAPIDemo\TestWebAPIFromService\obj\Debug\TestWebAPIFromService.csproj.GenerateResource.cache
+F:\MyCode\WebAPI\WebAPIDemo\TestWebAPIFromService\obj\Debug\TestWebAPIFromService.csproj.CoreCompileInputs.cache
+F:\MyCode\WebAPI\WebAPIDemo\TestWebAPIFromService\obj\Debug\TestWebAPIFromService.exe
+F:\MyCode\WebAPI\WebAPIDemo\TestWebAPIFromService\obj\Debug\TestWebAPIFromService.pdb

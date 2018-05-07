@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "GetRequest";
+}
+
+<h2>GetRequest</h2>
+<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+        $("#btn1").click(function () {
+            $.get("/api/Student/GetStudent", null,
+                function (data, status) {
+                    alert(data);
+                });
+        });
+
+        $("#btn2").click(function () {
+            $.get("/api/Student/GetStudentInfo", {id:10010,name:"刘湘智"},
+                function (data, status) {
+                    alert(data);
+                });
+        });       
+
+        $("#btn3").click(function () {
+            $.get("/api/Student/QueryStudent", { StudentId: 10010, StudentName: "刘湘智", Telephone: "15897396539" },
+                function (data, status) {
+                    alert(data);
+                });
+        });
+
+        $("#btn4").click(function () {
+            //包装数据
+            var jsondata = { StudentId: 10010, StudentName: "刘湘智", Telephone: "15897396539" };
+            $.get("/api/Student/GetStudentByJson", { jsonStudent: JSON.stringify(jsondata) },
+                function (data, status) {
+                    alert(data);
+                });
+        });
+
+        $("#btn5").click(function () {
+            $.get("/api/Student/QueryScore", { studentId: 10010 },
+                function (data, status) {
+                    alert(data);
+                });
+        });
+
+        $("#btn6").click(function () {
+            $.get("/api/Student/GetScore", { studentId: 10010 },
+                function (data, status) {
+                    alert(data);
+                });
+        });
+
+        $("#btn7").click(function () {
+            $.get("/api/Student/GetStudentList", { className:"2" },
+                function (data, status) {
+                    jQuery.each(data, function (i, item) {
+                        alert("学号:" + item.StudentId  + ",姓名：" + item.StudentName  + ",电话号码:" +  item.Telephone );
+                    });
+                });
+        });
+    });
+</script>
+
+<div>
+    <input type="button" id="btn1" value="Get：无参数的请求" /><br /><br />
+    <input type="button" id="btn2" value="Get：2个参数的请求" /><br /><br />
+    <input type="button" id="btn3" value="Get：多个参数的请求--实体类" /><br /><br />
+    <input type="button" id="btn4" value="Get：多个参数的请求--Json字符串" /><br /><br />
+    <input type="button" id="btn5" value="Get：不写HTTPGET特性" /><br /><br />
+    <input type="button" id="btn6" value="Get：通过命名获取" /><br /><br />
+    <input type="button" id="btn7" value="Get：获取对象列表" /><br /><br />
+</div>

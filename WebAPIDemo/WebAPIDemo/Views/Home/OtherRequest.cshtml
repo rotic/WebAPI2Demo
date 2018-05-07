@@ -1,0 +1,47 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>OtherRequest</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $("#btn1").click(function () {
+                $.ajax({
+                    type: "put",
+                    url: "/api/Score/PutStudent",
+                    data: null,
+                    success: function (data, status) {
+                        alert(data);
+                    }
+                });
+            });
+
+            $("#btn2").click(function () {
+                $.ajax({
+                    type: "delete",
+                    url: "/api/Score/DeleteStudent",
+                    data: {StudentId:10010,StudentName:"liuxiangzhi"},
+                    success: function (data, status) {
+                        alert(data);
+                    }
+                });
+            });
+
+        });
+   </script>
+</head>
+<body>
+    <div>
+        <input type="button" id="btn1" value="PUT请求" /><br /><br />
+        <input type="button" id="btn2" value="PUT请求-删除学员" /><br /><br />
+    </div>
+</body>
+</html>
