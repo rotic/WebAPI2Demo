@@ -21,7 +21,7 @@
         });
 
         $("#btn2").click(function () {
-            $.post("/api/Score/GetScoreByIdAndName", {id:10010,name:"刘湘智"},
+            $.post("/api/Score/GetScoreByIdAndName", {id:10010,name:"liuxiangzhi"},
                 function (data, status) {
                     alert(data);
                 });
@@ -32,7 +32,7 @@
                 type: "post",
                 url: "/api/Score/GetScoreByDynamic",
                 contentType: 'application/json',
-                data: JSON.stringify({ id: 10010, name: "刘湘智" }),//标准化
+                data: JSON.stringify({ id: 10010, name: "liuxiangzhi" }),//标准化
                 success: function (data, status) {
                     alert(data);
                 }        
@@ -40,7 +40,7 @@
         });
 
         $("#btn4").click(function () {
-            $.post("/api/Score/QueryStudent", { StudentID: 10010, StudentName: "刘湘智", Telephone:"13889899898"},
+            $.post("/api/Score/QueryStudent", { StudentID: 10010, StudentName: "liuxiangzhi", Telephone:"13889899898"},
                 function (data, status) {
                     alert(data);
                 });
@@ -81,7 +81,7 @@
 
         $("#btn8").click(function () {
             var stuList = [
-                { StudentId : 1001, StudentName : "Killy", Telephone : "15897396539" },
+                { StudentId : 1001, StudentName : "Killy", Telephone : "17512036539" },
                 { StudentId:1002, StudentName:"Tom", Telephone:"15897396549" },
                 { StudentId:1003, StudentName:"cindy", Telephone:"15897396559" }
                                 ];
