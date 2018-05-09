@@ -15,14 +15,14 @@
         });
 
         $("#btn2").click(function () {
-            $.get("/api/Student/GetStudentInfo", {id:10010,name:"刘湘智"},
+            $.get("/api/Student/GetStudentInfo", {id:10010,name:"liuxiangzhi"},
                 function (data, status) {
                     alert(data);
                 });
         });       
 
         $("#btn3").click(function () {
-            $.get("/api/Student/QueryStudent", { StudentId: 10010, StudentName: "刘湘智", Telephone: "15897396539" },
+            $.get("/api/Student/QueryStudent", { StudentId: 10010, StudentName: "liuxiangzhi", Telephone: "17512036539" },
                 function (data, status) {
                     alert(data);
                 });
@@ -30,7 +30,7 @@
 
         $("#btn4").click(function () {
             //包装数据
-            var jsondata = { StudentId: 10010, StudentName: "刘湘智", Telephone: "15897396539" };
+            var jsondata = { StudentId: 10010, StudentName: "liuxiangzhi", Telephone: "17512036539" };
             $.get("/api/Student/GetStudentByJson", { jsonStudent: JSON.stringify(jsondata) },
                 function (data, status) {
                     alert(data);
